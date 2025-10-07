@@ -1,4 +1,5 @@
-/* Egypt Essence Tours - Enhanced Stylesheet */
+# إنشاء ملف CSS محدث مع تحسينات الأعلام والتصميم
+css_content = '''/* Egypt Essence Tours - Enhanced Stylesheet */
 
 :root {
   /* Egyptian Color Palette */
@@ -147,7 +148,7 @@ body {
     font-size: 1.4rem !important;
     margin-right: 0.3rem !important;
   }
-
+  
   [dir="rtl"] .flag-emoji {
     margin-right: 0 !important;
     margin-left: 0.3rem !important;
@@ -649,41 +650,41 @@ body {
     padding: 2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-
+  
   [dir="rtl"] .nav-list {
     right: 0;
     left: 0;
   }
-
+  
   .nav-list.active {
     display: flex;
   }
-
+  
   .mobile-menu-toggle {
     display: block;
   }
-
+  
   .hero-content h1 {
     font-size: 2.5rem;
   }
-
+  
   .hero-content p {
     font-size: 1.1rem;
   }
-
+  
   .contact-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
+  
   .nav-container {
     flex-wrap: wrap;
   }
-
+  
   .logo {
     flex: 1;
   }
-
+  
   .nav {
     order: 3;
     width: 100%;
@@ -695,15 +696,15 @@ body {
   .hero-content h1 {
     font-size: 2rem;
   }
-
+  
   .section-header h2 {
     font-size: 2rem;
   }
-
+  
   .tours-grid {
     grid-template-columns: 1fr;
   }
-
+  
   .flag-emoji {
     font-size: 1.1rem !important;
   }
@@ -732,4 +733,10 @@ body {
 
 [lang="en"], [lang="de"], [lang="fr"], [lang="cs"], [lang="ru"] {
   font-family: 'Arial', 'Helvetica', sans-serif;
-}
+}'''
+
+# حفظ ملف CSS
+with open('style.css', 'w', encoding='utf-8') as f:
+    f.write(css_content)
+
+print("✅ تم إنشاء ملف style.css المُحدث")

@@ -1,14 +1,17 @@
-<!DOCTYPE html>
+# إنشاء الملفات المُحدثة للموقع مع التعديلات المطلوبة
+
+# 1. إنشاء ملف HTML محدث مع الترجمات الكاملة والأيقونات المصححة
+html_content = '''<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Egypt Essence Tours - اكتشف جوهر مصر الحقيقي</title>
     <meta name="description" id="page-description" content="أفضل الرحلات السياحية في مصر - الغردقة، الأقصر، والقاهرة. احجز رحلتك الآن!">
-
+    
     <!-- Favicon using uploaded logo -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='35' r='25' fill='%23F4A614'/%3E%3Cpath d='M20 45 L50 30 L80 45 L50 55 Z' fill='%2327BCD4'/%3E%3Cpath d='M25 60 Q50 45 75 60 Q50 75 25 60' fill='%2395E1F7'/%3E%3Ctext x='50' y='90' text-anchor='middle' fill='%23F4A614' font-family='Arial' font-size='14' font-weight='bold'%3EEE%3C/text%3E%3C/svg%3E">
-
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Amiri:wght@400;700&family=Noto+Sans+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -265,4 +268,10 @@
 
     <script src="app.js"></script>
 </body>
-</html>
+</html>'''
+
+# حفظ ملف HTML
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("✅ تم إنشاء ملف index.html المُحدث")

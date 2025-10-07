@@ -1,19 +1,20 @@
-// Egypt Essence Tours - Complete Multilingual Interactive Application
+# إنشاء ملف JavaScript محدث مع الترجمات الكاملة لجميع الرحلات والتحسينات
+js_content = '''// Egypt Essence Tours - Complete Multilingual Interactive Application
 // Enhanced with full translations and improved functionality
 
 document.addEventListener('DOMContentLoaded', function() {
-
+    
     // Complete Multilingual Content Database
     const translations = {
         ar: {
             // Page Meta
             'page-title': 'Egypt Essence Tours - اكتشف جوهر مصر الحقيقي',
             'page-description': 'أفضل الرحلات السياحية في مصر - الغردقة، الأقصر، والقاهرة. احجز رحلتك الآن!',
-
+            
             // Company Info
             'company-name': 'Egypt Essence Tours',
             'company-tagline': 'اكتشف جوهر مصر الحقيقي',
-
+            
             // Navigation
             'nav-home': 'الرئيسية',
             'nav-hurghada': 'رحلات الغردقة',
@@ -21,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav-cairo': 'رحلات القاهرة',
             'nav-about': 'من نحن',
             'nav-contact': 'التواصل',
-
+            
             // Hero Section
             'hero-title': 'اكتشف سحر مصر معنا',
             'hero-subtitle': 'استمتع بأجمل الرحلات السياحية في الغردقة والأقصر والقاهرة',
             'hero-cta': 'ابدأ رحلتك الآن',
-
+            
             // About Section
             'about-title': 'من نحن',
             'about-subtitle': 'شركة Egypt Essence Tours، رفيقك المثالي لاستكشاف جمال مصر',
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'feature-safety': 'رحلات آمنة ومؤمنة',
             'feature-guides': 'مرشدين سياحيين محترفين',
             'feature-timing': 'مواعيد دقيقة ومنظمة',
-
+            
             // Tours
             'hurghada-title': 'رحلات الغردقة',
             'hurghada-subtitle': 'استمتع بمغامرات البحر الأحمر الرائعة',
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'luxor-subtitle': 'اكتشف كنوز مصر الفرعونية',
             'cairo-title': 'رحلات القاهرة',
             'cairo-subtitle': 'استكشف عجائب العالم القديم',
-
+            
             // Contact
             'contact-title': 'تواصل معنا',
             'contact-subtitle': 'نحن هنا لمساعدتك في تخطيط رحلتك المثالية',
@@ -55,27 +56,27 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-email-input': 'البريد الإلكتروني',
             'contact-message': 'الرسالة',
             'contact-send': 'إرسال',
-
+            
             // Footer
             'footer-about': 'Egypt Essence Tours',
             'footer-description': 'شريكك المثالي لاستكشاف جمال مصر الأصيل',
             'footer-contact': 'تواصل معنا',
             'footer-follow': 'تابعنا',
             'footer-rights': '© 2025 Egypt Essence Tours. جميع الحقوق محفوظة.',
-
+            
             // Tour specific
             'book-now': 'احجز الآن'
         },
-
+        
         en: {
             // Page Meta
             'page-title': 'Egypt Essence Tours - Discover the True Essence of Egypt',
             'page-description': 'Best tours in Egypt - Hurghada, Luxor, and Cairo. Book your trip now!',
-
+            
             // Company Info
             'company-name': 'Egypt Essence Tours',
             'company-tagline': 'Discover the True Essence of Egypt',
-
+            
             // Navigation
             'nav-home': 'Home',
             'nav-hurghada': 'Hurghada Tours',
@@ -83,12 +84,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav-cairo': 'Cairo Tours',
             'nav-about': 'About Us',
             'nav-contact': 'Contact',
-
+            
             // Hero Section
             'hero-title': 'Discover the Magic of Egypt with Us',
             'hero-subtitle': 'Enjoy the most beautiful tours in Hurghada, Luxor, and Cairo',
             'hero-cta': 'Start Your Journey Now',
-
+            
             // About Section
             'about-title': 'About Us',
             'about-subtitle': 'Egypt Essence Tours, your perfect partner to explore the beauty of Egypt',
@@ -97,15 +98,15 @@ document.addEventListener('DOMContentLoaded', function() {
             'feature-safety': 'Safe and Secure Tours',
             'feature-guides': 'Professional Tour Guides',
             'feature-timing': 'Precise and Organized Schedules',
-
+            
             // Tours
             'hurghada-title': 'Hurghada Tours',
             'hurghada-subtitle': 'Enjoy amazing Red Sea adventures',
             'luxor-title': 'Luxor Tours',
-            'luxor-subtitle': 'Discover Egypt\'s pharaonic treasures',
+            'luxor-subtitle': 'Discover Egypt\\'s pharaonic treasures',
             'cairo-title': 'Cairo Tours',
             'cairo-subtitle': 'Explore the wonders of the ancient world',
-
+            
             // Contact
             'contact-title': 'Contact Us',
             'contact-subtitle': 'We are here to help you plan your perfect trip',
@@ -117,27 +118,27 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-email-input': 'Email',
             'contact-message': 'Message',
             'contact-send': 'Send',
-
+            
             // Footer
             'footer-about': 'Egypt Essence Tours',
             'footer-description': 'Your perfect partner to explore authentic Egyptian beauty',
             'footer-contact': 'Contact Us',
             'footer-follow': 'Follow Us',
             'footer-rights': '© 2025 Egypt Essence Tours. All rights reserved.',
-
+            
             // Tour specific
             'book-now': 'Book Now'
         },
-
+        
         de: {
             // Page Meta
             'page-title': 'Egypt Essence Tours - Entdecke die wahre Essenz Ägyptens',
             'page-description': 'Beste Touren in Ägypten - Hurghada, Luxor und Kairo. Buchen Sie jetzt Ihre Reise!',
-
+            
             // Company Info
             'company-name': 'Egypt Essence Tours',
             'company-tagline': 'Entdecke die wahre Essenz Ägyptens',
-
+            
             // Navigation
             'nav-home': 'Startseite',
             'nav-hurghada': 'Hurghada Touren',
@@ -145,12 +146,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav-cairo': 'Kairo Touren',
             'nav-about': 'Über Uns',
             'nav-contact': 'Kontakt',
-
+            
             // Hero Section
             'hero-title': 'Entdecken Sie die Magie Ägyptens mit uns',
             'hero-subtitle': 'Genießen Sie die schönsten Touren in Hurghada, Luxor und Kairo',
             'hero-cta': 'Starten Sie Ihre Reise jetzt',
-
+            
             // About Section
             'about-title': 'Über Uns',
             'about-subtitle': 'Egypt Essence Tours, Ihr perfekter Partner zur Erkundung der Schönheit Ägyptens',
@@ -159,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'feature-safety': 'Sichere und geschützte Touren',
             'feature-guides': 'Professionelle Reiseführer',
             'feature-timing': 'Präzise und organisierte Zeitpläne',
-
+            
             // Tours
             'hurghada-title': 'Hurghada Touren',
             'hurghada-subtitle': 'Genießen Sie erstaunliche Rotes-Meer-Abenteuer',
@@ -167,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'luxor-subtitle': 'Entdecken Sie Ägyptens pharaonische Schätze',
             'cairo-title': 'Kairo Touren',
             'cairo-subtitle': 'Erkunden Sie die Wunder der antiken Welt',
-
+            
             // Contact
             'contact-title': 'Kontaktieren Sie uns',
             'contact-subtitle': 'Wir sind hier, um Ihnen bei der Planung Ihrer perfekten Reise zu helfen',
@@ -179,27 +180,27 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-email-input': 'E-Mail',
             'contact-message': 'Nachricht',
             'contact-send': 'Senden',
-
+            
             // Footer
             'footer-about': 'Egypt Essence Tours',
             'footer-description': 'Ihr perfekter Partner zur Erkundung authentischer ägyptischer Schönheit',
             'footer-contact': 'Kontaktieren Sie uns',
             'footer-follow': 'Folgen Sie uns',
             'footer-rights': '© 2025 Egypt Essence Tours. Alle Rechte vorbehalten.',
-
+            
             // Tour specific
             'book-now': 'Jetzt buchen'
         },
-
+        
         ru: {
             // Page Meta
             'page-title': 'Egypt Essence Tours - Откройте истинную суть Египта',
             'page-description': 'Лучшие туры в Египет - Хургада, Луксор и Каир. Забронируйте поездку сейчас!',
-
+            
             // Company Info
             'company-name': 'Egypt Essence Tours',
             'company-tagline': 'Откройте истинную суть Египта',
-
+            
             // Navigation
             'nav-home': 'Главная',
             'nav-hurghada': 'Туры в Хургаду',
@@ -207,12 +208,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav-cairo': 'Туры в Каир',
             'nav-about': 'О нас',
             'nav-contact': 'Контакты',
-
+            
             // Hero Section
             'hero-title': 'Откройте магию Египта с нами',
             'hero-subtitle': 'Наслаждайтесь самыми красивыми турами в Хургаде, Луксоре и Каире',
             'hero-cta': 'Начните свое путешествие сейчас',
-
+            
             // About Section
             'about-title': 'О нас',
             'about-subtitle': 'Egypt Essence Tours, ваш идеальный партнер для изучения красоты Египта',
@@ -221,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'feature-safety': 'Безопасные и надежные туры',
             'feature-guides': 'Профессиональные гиды',
             'feature-timing': 'Точные и организованные расписания',
-
+            
             // Tours
             'hurghada-title': 'Туры в Хургаду',
             'hurghada-subtitle': 'Наслаждайтесь удивительными приключениями Красного моря',
@@ -229,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'luxor-subtitle': 'Откройте фараонские сокровища Египта',
             'cairo-title': 'Туры в Каир',
             'cairo-subtitle': 'Исследуйте чудеса древнего мира',
-
+            
             // Contact
             'contact-title': 'Свяжитесь с нами',
             'contact-subtitle': 'Мы здесь, чтобы помочь вам спланировать идеальную поездку',
@@ -241,27 +242,27 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-email-input': 'Электронная почта',
             'contact-message': 'Сообщение',
             'contact-send': 'Отправить',
-
+            
             // Footer
             'footer-about': 'Egypt Essence Tours',
             'footer-description': 'Ваш идеальный партнер для изучения подлинной египетской красоты',
             'footer-contact': 'Свяжитесь с нами',
             'footer-follow': 'Следите за нами',
             'footer-rights': '© 2025 Egypt Essence Tours. Все права защищены.',
-
+            
             // Tour specific
             'book-now': 'Забронировать сейчас'
         },
-
+        
         zh: {
             // Page Meta
             'page-title': 'Egypt Essence Tours - 探索埃及的真正精髓',
             'page-description': '埃及最佳旅游 - 赫尔格达、卢克索和开罗。立即预订您的行程！',
-
+            
             // Company Info
             'company-name': 'Egypt Essence Tours',
             'company-tagline': '探索埃及的真正精髓',
-
+            
             // Navigation
             'nav-home': '首页',
             'nav-hurghada': '赫尔格达旅游',
@@ -269,12 +270,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav-cairo': '开罗旅游',
             'nav-about': '关于我们',
             'nav-contact': '联系我们',
-
+            
             // Hero Section
             'hero-title': '与我们一起探索埃及的魅力',
             'hero-subtitle': '享受赫尔格达、卢克索和开罗最美丽的旅游',
             'hero-cta': '立即开始您的旅程',
-
+            
             // About Section
             'about-title': '关于我们',
             'about-subtitle': 'Egypt Essence Tours，您探索埃及美景的完美伙伴',
@@ -283,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'feature-safety': '安全可靠的旅游',
             'feature-guides': '专业导游',
             'feature-timing': '精确有序的时间安排',
-
+            
             // Tours
             'hurghada-title': '赫尔格达旅游',
             'hurghada-subtitle': '享受令人惊叹的红海冒险',
@@ -291,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'luxor-subtitle': '发现埃及的法老宝藏',
             'cairo-title': '开罗旅游',
             'cairo-subtitle': '探索古代世界的奇迹',
-
+            
             // Contact
             'contact-title': '联系我们',
             'contact-subtitle': '我们在这里帮助您规划完美的旅行',
@@ -303,27 +304,27 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-email-input': '电子邮件',
             'contact-message': '消息',
             'contact-send': '发送',
-
+            
             // Footer
             'footer-about': 'Egypt Essence Tours',
             'footer-description': '您探索正宗埃及美景的完美伙伴',
             'footer-contact': '联系我们',
             'footer-follow': '关注我们',
             'footer-rights': '© 2025 Egypt Essence Tours. 版权所有。',
-
+            
             // Tour specific
             'book-now': '立即预订'
         },
-
+        
         cs: {
             // Page Meta
             'page-title': 'Egypt Essence Tours - Objevte pravou podstatu Egypta',
             'page-description': 'Nejlepší zájezdy do Egypta - Hurghada, Luxor a Káhira. Rezervujte si cestu nyní!',
-
+            
             // Company Info
             'company-name': 'Egypt Essence Tours',
             'company-tagline': 'Objevte pravou podstatu Egypta',
-
+            
             // Navigation
             'nav-home': 'Domů',
             'nav-hurghada': 'Zájezdy Hurghada',
@@ -331,12 +332,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav-cairo': 'Zájezdy Káhira',
             'nav-about': 'O nás',
             'nav-contact': 'Kontakt',
-
+            
             // Hero Section
             'hero-title': 'Objevte kouzlo Egypta s námi',
             'hero-subtitle': 'Užijte si nejkrásnější zájezdy do Hurghady, Luxoru a Káhiry',
             'hero-cta': 'Začněte svou cestu nyní',
-
+            
             // About Section
             'about-title': 'O nás',
             'about-subtitle': 'Egypt Essence Tours, váš perfektní partner pro objevování krásy Egypta',
@@ -345,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'feature-safety': 'Bezpečné a zabezpečené zájezdy',
             'feature-guides': 'Profesionální průvodci',
             'feature-timing': 'Přesné a organizované rozvrhy',
-
+            
             // Tours
             'hurghada-title': 'Zájezdy Hurghada',
             'hurghada-subtitle': 'Užijte si úžasná dobrodružství Rudého moře',
@@ -353,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'luxor-subtitle': 'Objevte egyptské faraonské poklady',
             'cairo-title': 'Zájezdy Káhira',
             'cairo-subtitle': 'Prozkoumejte zázraky starověkého světa',
-
+            
             // Contact
             'contact-title': 'Kontaktujte nás',
             'contact-subtitle': 'Jsme tu, abychom vám pomohli naplánovat vaši perfektní cestu',
@@ -365,27 +366,27 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-email-input': 'Email',
             'contact-message': 'Zpráva',
             'contact-send': 'Odeslat',
-
+            
             // Footer
             'footer-about': 'Egypt Essence Tours',
             'footer-description': 'Váš perfektní partner pro objevování autentické egyptské krásy',
             'footer-contact': 'Kontaktujte nás',
             'footer-follow': 'Sledujte nás',
             'footer-rights': '© 2025 Egypt Essence Tours. Všechna práva vyhrazena.',
-
+            
             // Tour specific
             'book-now': 'Rezervovat nyní'
         },
-
+        
         fr: {
             // Page Meta
-            'page-title': 'Egypt Essence Tours - Découvrez la vraie essence de l\'Égypte',
+            'page-title': 'Egypt Essence Tours - Découvrez la vraie essence de l\\'Égypte',
             'page-description': 'Meilleurs circuits en Égypte - Hurghada, Louxor et Le Caire. Réservez votre voyage maintenant!',
-
+            
             // Company Info
             'company-name': 'Egypt Essence Tours',
-            'company-tagline': 'Découvrez la vraie essence de l\'Égypte',
-
+            'company-tagline': 'Découvrez la vraie essence de l\\'Égypte',
+            
             // Navigation
             'nav-home': 'Accueil',
             'nav-hurghada': 'Circuits Hurghada',
@@ -393,29 +394,29 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav-cairo': 'Circuits Le Caire',
             'nav-about': 'À propos',
             'nav-contact': 'Contact',
-
+            
             // Hero Section
-            'hero-title': 'Découvrez la magie de l\'Égypte avec nous',
+            'hero-title': 'Découvrez la magie de l\\'Égypte avec nous',
             'hero-subtitle': 'Profitez des plus beaux circuits à Hurghada, Louxor et Le Caire',
             'hero-cta': 'Commencez votre voyage maintenant',
-
+            
             // About Section
             'about-title': 'À propos de nous',
-            'about-subtitle': 'Egypt Essence Tours, votre partenaire parfait pour explorer la beauté de l\'Égypte',
-            'about-description': 'Nous sommes une entreprise spécialisée dans l\'organisation de circuits dans les plus belles villes égyptiennes. Nous fournissons d\'excellents services et des voyages soigneusement organisés pour vous assurer la meilleure expérience touristique possible.',
+            'about-subtitle': 'Egypt Essence Tours, votre partenaire parfait pour explorer la beauté de l\\'Égypte',
+            'about-description': 'Nous sommes une entreprise spécialisée dans l\\'organisation de circuits dans les plus belles villes égyptiennes. Nous fournissons d\\'excellents services et des voyages soigneusement organisés pour vous assurer la meilleure expérience touristique possible.',
             'feature-service': 'Excellent service client',
             'feature-safety': 'Circuits sûrs et sécurisés',
             'feature-guides': 'Guides touristiques professionnels',
             'feature-timing': 'Horaires précis et organisés',
-
+            
             // Tours
             'hurghada-title': 'Circuits Hurghada',
-            'hurghada-subtitle': 'Profitez d\'incroyables aventures en mer Rouge',
+            'hurghada-subtitle': 'Profitez d\\'incroyables aventures en mer Rouge',
             'luxor-title': 'Circuits Louxor',
-            'luxor-subtitle': 'Découvrez les trésors pharaoniques de l\'Égypte',
+            'luxor-subtitle': 'Découvrez les trésors pharaoniques de l\\'Égypte',
             'cairo-title': 'Circuits Le Caire',
             'cairo-subtitle': 'Explorez les merveilles du monde antique',
-
+            
             // Contact
             'contact-title': 'Contactez-nous',
             'contact-subtitle': 'Nous sommes là pour vous aider à planifier votre voyage parfait',
@@ -427,14 +428,14 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-email-input': 'Email',
             'contact-message': 'Message',
             'contact-send': 'Envoyer',
-
+            
             // Footer
             'footer-about': 'Egypt Essence Tours',
             'footer-description': 'Votre partenaire parfait pour explorer la beauté authentique égyptienne',
             'footer-contact': 'Contactez-nous',
             'footer-follow': 'Suivez-nous',
             'footer-rights': '© 2025 Egypt Essence Tours. Tous droits réservés.',
-
+            
             // Tour specific
             'book-now': 'Réserver maintenant'
         }
@@ -480,7 +481,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     ru: ['Два места для снорклинга', 'Исследование острова', 'Полный обед включен', 'Спасательные жилеты предоставляются'],
                     zh: ['两个浮潜点', '岛屿探索', '包含全餐', '提供救生衣'],
                     cs: ['Dva body pro šnorchlování', 'Průzkum ostrova', 'Kompletní oběd', 'Záchranné vesty k dispozici'],
-                    fr: ['Deux arrêts snorkeling', 'Exploration de l\'île', 'Déjeuner complet inclus', 'Gilets de sauvetage fournis']
+                    fr: ['Deux arrêts snorkeling', 'Exploration de l\\'île', 'Déjeuner complet inclus', 'Gilets de sauvetage fournis']
                 }
             },
             {
@@ -631,7 +632,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     ru: 'Полнодневный круиз наблюдения за дельфинами с оборудованием для снорклинга и развлечениями на борту',
                     zh: '全日海豚观察游轮，配有浮潜装备和船上娱乐',
                     cs: 'Celodenní plavba pozorování delfínů se šnorchlovacím vybavením a zábavou na palubě',
-                    fr: 'Croisière d\'observation des dauphins d\'une journée complète avec équipement de snorkeling et animations à bord'
+                    fr: 'Croisière d\\'observation des dauphins d\\'une journée complète avec équipement de snorkeling et animations à bord'
                 },
                 highlights: {
                     ar: ['رصد الدلافين', 'محطتان للغطس', 'برنامج يوم كامل', 'معدات مشمولة'],
@@ -751,7 +752,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     ru: 'Частный опыт катера для 4-6 гостей с посещением островов и индивидуальными местами для снорклинга',
                     zh: '4-6位客人的私人船艇体验，包括岛屿跳跃和定制浮潜点',
                     cs: 'Soukromý zážitek na lodi pro 4-6 hostů s ostrovními výlety a vlastními šnorchlovacími místy',
-                    fr: 'Expérience bateau privé pour 4-6 invités avec saut d\'îles et spots de snorkeling personnalisés'
+                    fr: 'Expérience bateau privé pour 4-6 invités avec saut d\\'îles et spots de snorkeling personnalisés'
                 },
                 highlights: {
                     ar: ['قارب خاص', 'جزيرتان مشمولتان', 'مسار مخصص', 'نظام صوتي'],
@@ -844,7 +845,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         ],
-
+        
         luxor: [
             {
                 id: 'hot-air-balloon',
@@ -874,7 +875,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     ru: 'Парите 30-45 минут над Долиной Царей, храмом Хатшепсут и пейзажами Нила на рассвете',
                     zh: '在黎明时分飞行30-45分钟，俯瞰国王谷、哈特谢普苏特神庙和尼罗河景观',
                     cs: 'Vznášejte se 30-45 minut nad Údolím králů, chrámem Hatšepsut a krajinou Nilu za úsvitu',
-                    fr: 'Volez 30-45 minutes au-dessus de la Vallée des Rois, du temple d\'Hatchepsout et des paysages du Nil à l\'aube'
+                    fr: 'Volez 30-45 minutes au-dessus de la Vallée des Rois, du temple d\\'Hatchepsout et des paysages du Nil à l\\'aube'
                 },
                 highlights: {
                     ar: ['توقيت الشروق', 'طيران 30-45 دقيقة', 'طيار محترف', 'شهادة طيران'],
@@ -909,7 +910,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 descriptions: {
                     ar: 'جولة شاملة تجمع بين معالم الأقصر البارزة مع مجمع معبد دندرة المذهل',
-                    en: 'Comprehensive tour combining Luxor\'s highlights with the stunning Dendera Temple complex',
+                    en: 'Comprehensive tour combining Luxor\\'s highlights with the stunning Dendera Temple complex',
                     de: 'Umfassende Tour, die Luxors Höhepunkte mit dem atemberaubenden Dendera-Tempelkomplex verbindet',
                     ru: 'Комплексный тур, сочетающий основные достопримечательности Луксора с потрясающим храмовым комплексом Дендера',
                     zh: '综合游览，结合卢克索的亮点和令人惊叹的丹德拉神庙群',
@@ -923,7 +924,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     ru: ['Храм Карнак', 'Храм Хатшепсут', 'Храм Дендера', 'Профессиональный гид'],
                     zh: ['卡纳克神庙', '哈特谢普苏特神庙', '丹德拉神庙', '专业导游'],
                     cs: ['Chrám Karnak', 'Chrám Hatšepsut', 'Chrám Dendera', 'Profesionální průvodce'],
-                    fr: ['Temple de Karnak', 'Temple d\'Hatchepsout', 'Temple de Dendéra', 'Guide professionnel']
+                    fr: ['Temple de Karnak', 'Temple d\\'Hatchepsout', 'Temple de Dendéra', 'Guide professionnel']
                 }
             },
             {
@@ -963,7 +964,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     ru: ['Долина Цариц', 'Храм Карнак', 'Храм Хатшепсут', 'Колоссы Мемнона'],
                     zh: ['皇后谷', '卡纳克神庙', '哈特谢普苏特神庙', '门农巨像'],
                     cs: ['Údolí královen', 'Chrám Karnak', 'Chrám Hatšepsut', 'Kolosové Memnóna'],
-                    fr: ['Vallée des Reines', 'Temple de Karnak', 'Temple d\'Hatchepsout', 'Colosses de Memnon']
+                    fr: ['Vallée des Reines', 'Temple de Karnak', 'Temple d\\'Hatchepsout', 'Colosses de Memnon']
                 }
             },
             {
@@ -1008,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         ],
-
+        
         cairo: [
             {
                 id: 'pyramids-museum',
@@ -1096,7 +1097,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Apply translations
     function applyTranslations(lang) {
         const langData = translations[lang] || translations['ar'];
-
+        
         // Update document properties
         document.title = langData['page-title'];
         const metaDesc = document.querySelector('meta[name="description"]');
@@ -1285,7 +1286,7 @@ document.addEventListener('DOMContentLoaded', function() {
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 const formData = new FormData(form);
-                const message = `Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\nMessage: ${formData.get('message')}`;
+                const message = `Name: ${formData.get('name')}\\nEmail: ${formData.get('email')}\\nMessage: ${formData.get('message')}`;
                 const whatsappUrl = `https://wa.me/201009531706?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
                 form.reset();
@@ -1329,4 +1330,10 @@ document.addEventListener('DOMContentLoaded', function() {
             link.href = link.href.replace(/(\+?\d{10,15})/, whatsappNumber);
         }
     });
-});
+});'''
+
+# حفظ ملف JavaScript
+with open('app.js', 'w', encoding='utf-8') as f:
+    f.write(js_content)
+
+print("✅ تم إنشاء ملف app.js المُحدث مع الترجمات الكاملة")
