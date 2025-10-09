@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Egypt Essence Tours - استكشف أكثر اشعر أكثر</title>
-    <meta name="description" id="page-description" content="أفضل الرحلات السياحية في مصر - الغردقة، الأقصر، والقاهرة. احجز رحلتك الآن!">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23083342'/><stop offset='100%' style='stop-color:%231bc8d2'/></linearGradient></defs><rect width='100' height='100' fill='url(%23bg)'/><polygon points='50,20 35,35 50,30 65,35' fill='%23DED18D'/><rect x='45' y='35' width='10' height='25' fill='%23DED18D'/><circle cx='25' cy='70' r='8' fill='%23EFCF83'/><circle cx='75' cy='70' r='8' fill='%23EFCF83'/><text x='50' y='90' text-anchor='middle' fill='%23DED18D' font-size='10' font-weight='bold'>EET</text></svg>">
+    <meta name="description" id="page-description"
+        content="أفضل الرحلات السياحية في مصر - الغردقة، الأقصر، والقاهرة. احجز رحلتك الآن!">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23083342'/><stop offset='100%' style='stop-color:%231bc8d2'/></linearGradient></defs><rect width='100' height='100' fill='url(%23bg)'/><polygon points='50,20 35,35 50,30 65,35' fill='%23DED18D'/><rect x='45' y='35' width='10' height='25' fill='%23DED18D'/><circle cx='25' cy='70' r='8' fill='%23EFCF83'/><circle cx='75' cy='70' r='8' fill='%23EFCF83'/><text x='50' y='90' text-anchor='middle' fill='%23DED18D' font-size='10' font-weight='bold'>EET</text></svg>">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Amiri:wght@400;700&family=Noto+Sans+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Amiri:wght@400;700&family=Noto+Sans+SC:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+    <a class="skip-link" href="#home">تخطى إلى المحتوى الرئيسي</a>
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -20,16 +27,17 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="50" height="50">
                             <defs>
                                 <linearGradient id="logo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#083342"/>
-                                    <stop offset="100%" style="stop-color:#1bc8d2"/>
+                                    <stop offset="0%" style="stop-color:#083342" />
+                                    <stop offset="100%" style="stop-color:#1bc8d2" />
                                 </linearGradient>
                             </defs>
-                            <rect width="60" height="60" rx="10" fill="url(#logo-bg)"/>
-                            <polygon points="30,12 21,21 30,18 39,21" fill="#DED18D"/>
-                            <rect x="27" y="21" width="6" height="15" fill="#DED18D"/>
-                            <circle cx="15" cy="42" r="5" fill="#EFCF83"/>
-                            <circle cx="45" cy="42" r="5" fill="#EFCF83"/>
-                            <text x="30" y="54" text-anchor="middle" fill="#DED18D" font-size="8" font-weight="bold">EET</text>
+                            <rect width="60" height="60" rx="10" fill="url(#logo-bg)" />
+                            <polygon points="30,12 21,21 30,18 39,21" fill="#DED18D" />
+                            <rect x="27" y="21" width="6" height="15" fill="#DED18D" />
+                            <circle cx="15" cy="42" r="5" fill="#EFCF83" />
+                            <circle cx="45" cy="42" r="5" fill="#EFCF83" />
+                            <text x="30" y="54" text-anchor="middle" fill="#DED18D" font-size="8"
+                                font-weight="bold">EET</text>
                         </svg>
                     </div>
                     <div class="logo-text">
@@ -39,12 +47,13 @@
                 </div>
                 <nav class="nav">
                     <div class="language-switcher">
-                        <button class="language-btn" id="currentLang">
+                        <button class="language-btn" id="currentLang" role="button" aria-haspopup="menu"
+                            aria-expanded="false" tabindex="0">
                             <span class="flag">🇪🇬</span>
                             <span class="lang-name">العربية</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
-                        <div class="language-dropdown" id="languageDropdown">
+                        <div class="language-dropdown" id="languageDropdown" role="menu">
                             <a href="#" data-lang="ar" class="active">
                                 <span class="flag">🇪🇬</span>
                                 العربية
@@ -73,6 +82,9 @@
                                 <span class="flag">🇫🇷</span>
                                 Français
                             </a>
+                            <a href="#" data-lang="pl">
+                                <span class="flag">🇵🇱</span> Polski
+                            </a>
                         </div>
                     </div>
                     <ul class="nav-list">
@@ -83,7 +95,7 @@
                         <li><a href="#about" data-translate="nav-about">من نحن</a></li>
                         <li><a href="#contact" data-translate="nav-contact">التواصل</a></li>
                     </ul>
-                    <button class="mobile-menu-toggle">
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
                         <i class="fas fa-bars"></i>
                     </button>
                 </nav>
@@ -113,7 +125,8 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p data-translate="about-description">نحن شركة متخصصة في تنظيم الرحلات السياحية في أجمل المدن المصرية. نقدم خدمات متميزة ورحلات منظمة بعناية لضمان حصولكم على أفضل تجربة سياحية ممكنة.</p>
+                    <p data-translate="about-description">نحن شركة متخصصة في تنظيم الرحلات السياحية في أجمل المدن
+                        المصرية. نقدم خدمات متميزة ورحلات منظمة بعناية لضمان حصولكم على أفضل تجربة سياحية ممكنة.</p>
                     <div class="features">
                         <div class="feature">
                             <i class="fas fa-star"></i>
@@ -150,7 +163,8 @@
                     <div class="tour-icon">🏝️</div>
                     <h3 data-translate="tour-hula-hula-name">رحلة جزيرة هولا هولا</h3>
                     <p class="tour-time" data-translate="tour-hula-hula-time">8:30 صباحاً - 4:30 مساءً</p>
-                    <p class="tour-description" data-translate="tour-hula-hula-desc">استمتع بالمالديف المصرية مع المياه الصافية والشواطئ الذهبية ونقاط تصوير احترافية</p>
+                    <p class="tour-description" data-translate="tour-hula-hula-desc">استمتع بالمالديف المصرية مع المياه
+                        الصافية والشواطئ الذهبية ونقاط تصوير احترافية</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-hula-hula-h1">محطتان للغطس</li>
                         <li data-translate="tour-hula-hula-h2">استكشاف الجزيرة</li>
@@ -165,14 +179,16 @@
                     <div class="tour-icon">⚓</div>
                     <h3 data-translate="tour-royal-seascope-name">الغواصة الملكية سي سكوب</h3>
                     <p class="tour-time" data-translate="tour-royal-seascope-time">رحلات متعددة يومياً</p>
-                    <p class="tour-description" data-translate="tour-royal-seascope-desc">استكشف العالم تحت الماء في راحة مكيفة مع نوافذ بانورامية وعروض الغواصين</p>
+                    <p class="tour-description" data-translate="tour-royal-seascope-desc">استكشف العالم تحت الماء في
+                        راحة مكيفة مع نوافذ بانورامية وعروض الغواصين</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-royal-seascope-h1">قاعة مشاهدة بانورامية</li>
                         <li data-translate="tour-royal-seascope-h2">عروض الغواصين</li>
                         <li data-translate="tour-royal-seascope-h3">محطة غطس</li>
                         <li data-translate="tour-royal-seascope-h4">مرطبات ترحيبية</li>
                     </ul>
-                    <button class="book-btn" data-tour-name="royal-seascope" data-translate="book-now">احجز الآن</button>
+                    <button class="book-btn" data-tour-name="royal-seascope" data-translate="book-now">احجز
+                        الآن</button>
                 </div>
 
                 <!-- Sindbad Submarine -->
@@ -180,7 +196,8 @@
                     <div class="tour-icon">🚢</div>
                     <h3 data-translate="tour-sindbad-name">غواصة سندباد</h3>
                     <p class="tour-time" data-translate="tour-sindbad-time">11:00 صباحاً و 1:00 ظهراً</p>
-                    <p class="tour-description" data-translate="tour-sindbad-desc">انغمس 25 متراً في العمق لمشاهدة الشعاب المرجانية والحياة البحرية من خلال النوافذ الكبيرة</p>
+                    <p class="tour-description" data-translate="tour-sindbad-desc">انغمس 25 متراً في العمق لمشاهدة
+                        الشعاب المرجانية والحياة البحرية من خلال النوافذ الكبيرة</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-sindbad-h1">عمق 25 متر</li>
                         <li data-translate="tour-sindbad-h2">مشاهدة الشعاب المرجانية</li>
@@ -195,7 +212,8 @@
                     <div class="tour-icon">🛥️</div>
                     <h3 data-translate="tour-panorama-name">الغواصة البانوراما</h3>
                     <p class="tour-time" data-translate="tour-panorama-time">رحلات يومية</p>
-                    <p class="tour-description" data-translate="tour-panorama-desc">غواصة متعددة الطوابق مع وسائل الترفيه ومشاهدة العالم البحري في راحة تامة</p>
+                    <p class="tour-description" data-translate="tour-panorama-desc">غواصة متعددة الطوابق مع وسائل
+                        الترفيه ومشاهدة العالم البحري في راحة تامة</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-panorama-h1">متعددة الطوابق</li>
                         <li data-translate="tour-panorama-h2">برامج ترفيهية</li>
@@ -210,7 +228,8 @@
                     <div class="tour-icon">🐬</div>
                     <h3 data-translate="tour-dolphin-house-name">رحلة بيت الدلافين</h3>
                     <p class="tour-time" data-translate="tour-dolphin-house-time">8:30 صباحاً - 4:30 مساءً</p>
-                    <p class="tour-description" data-translate="tour-dolphin-house-desc">رحلة يوم كامل لمشاهدة الدلافين مع معدات الغطس وترفيه على متن القارب</p>
+                    <p class="tour-description" data-translate="tour-dolphin-house-desc">رحلة يوم كامل لمشاهدة الدلافين
+                        مع معدات الغطس وترفيه على متن القارب</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-dolphin-house-h1">مشاهدة الدلافين</li>
                         <li data-translate="tour-dolphin-house-h2">محطتان للغطس</li>
@@ -225,14 +244,16 @@
                     <div class="tour-icon">🚙</div>
                     <h3 data-translate="tour-morning-safari-name">سفاري الصحراء الصباحي العائلي</h3>
                     <p class="tour-time" data-translate="tour-morning-safari-time">برنامج صباحي</p>
-                    <p class="tour-description" data-translate="tour-morning-safari-desc">مغامرة صحراوية عائلية مع عربات الشاطئ والعربات العنكبوتية</p>
+                    <p class="tour-description" data-translate="tour-morning-safari-desc">مغامرة صحراوية عائلية مع عربات
+                        الشاطئ والعربات العنكبوتية</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-morning-safari-h1">ركوب عربات الشاطئ</li>
                         <li data-translate="tour-morning-safari-h2">تجربة العربة العنكبوتية</li>
                         <li data-translate="tour-morning-safari-h3">استكشاف الصحراء</li>
                         <li data-translate="tour-morning-safari-h4">معدات أمان</li>
                     </ul>
-                    <button class="book-btn" data-tour-name="morning-safari" data-translate="book-now">احجز الآن</button>
+                    <button class="book-btn" data-tour-name="morning-safari" data-translate="book-now">احجز
+                        الآن</button>
                 </div>
 
                 <!-- Evening Safari -->
@@ -240,14 +261,16 @@
                     <div class="tour-icon">🌅</div>
                     <h3 data-translate="tour-evening-safari-name">سفاري الصحراء المسائي العائلي</h3>
                     <p class="tour-time" data-translate="tour-evening-safari-time">برنامج مسائي</p>
-                    <p class="tour-description" data-translate="tour-evening-safari-desc">سفاري صحراوي مع ترفيه تقليدي وعشاء بدوي تحت النجوم</p>
+                    <p class="tour-description" data-translate="tour-evening-safari-desc">سفاري صحراوي مع ترفيه تقليدي
+                        وعشاء بدوي تحت النجوم</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-evening-safari-h1">عشاء بدوي</li>
                         <li data-translate="tour-evening-safari-h2">عروض تقليدية</li>
                         <li data-translate="tour-evening-safari-h3">رحلة غروب</li>
                         <li data-translate="tour-evening-safari-h4">موسيقى شعبية</li>
                     </ul>
-                    <button class="book-btn" data-tour-name="evening-safari" data-translate="book-now">احجز الآن</button>
+                    <button class="book-btn" data-tour-name="evening-safari" data-translate="book-now">احجز
+                        الآن</button>
                 </div>
 
                 <!-- Speed Boat Private -->
@@ -255,7 +278,8 @@
                     <div class="tour-icon">🚤</div>
                     <h3 data-translate="tour-speedboat-name">مغامرة السبيد بوت الخاص</h3>
                     <p class="tour-time" data-translate="tour-speedboat-time">مواعيد مرنة</p>
-                    <p class="tour-description" data-translate="tour-speedboat-desc">تجربة قارب خاص لـ 4-6 ضيوف مع تنقل بين الجزر ونقاط غطس مخصصة</p>
+                    <p class="tour-description" data-translate="tour-speedboat-desc">تجربة قارب خاص لـ 4-6 ضيوف مع تنقل
+                        بين الجزر ونقاط غطس مخصصة</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-speedboat-h1">قارب خاص 4-6 ضيوف</li>
                         <li data-translate="tour-speedboat-h2">جزيرتان متضمنتان</li>
@@ -270,7 +294,8 @@
                     <div class="tour-icon">🐟</div>
                     <h3 data-translate="tour-aquarium-name">الأكواريوم الكبير</h3>
                     <p class="tour-time" data-translate="tour-aquarium-time">10:00 صباحاً - 7:00 مساءً</p>
-                    <p class="tour-description" data-translate="tour-aquarium-desc">معرض للحياة البحرية مع أنواع نادرة من الأسماك والمرجان</p>
+                    <p class="tour-description" data-translate="tour-aquarium-desc">معرض للحياة البحرية مع أنواع نادرة
+                        من الأسماك والمرجان</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-aquarium-h1">معرض الحياة البحرية</li>
                         <li data-translate="tour-aquarium-h2">أسماك نادرة</li>
@@ -285,7 +310,8 @@
                     <div class="tour-icon">🐬</div>
                     <h3 data-translate="tour-dolphin-show-name">عرض الدلافين</h3>
                     <p class="tour-time" data-translate="tour-dolphin-show-time">3:30 - 5:00 مساءً</p>
-                    <p class="tour-description" data-translate="tour-dolphin-show-desc">عرض ترفيهي بحري مع الدلافين المدربة وعروض مائية مثيرة</p>
+                    <p class="tour-description" data-translate="tour-dolphin-show-desc">عرض ترفيهي بحري مع الدلافين
+                        المدربة وعروض مائية مثيرة</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-dolphin-show-h1">عروض دلافين مدربة</li>
                         <li data-translate="tour-dolphin-show-h2">عروض مائية</li>
@@ -311,7 +337,8 @@
                     <div class="tour-icon">🎈</div>
                     <h3 data-translate="tour-balloon-name">البالون الطائر</h3>
                     <p class="tour-time" data-translate="tour-balloon-time">رحلات شروق الشمس</p>
-                    <p class="tour-description" data-translate="tour-balloon-desc">تحليق لمدة 30-45 دقيقة فوق وادي الملوك ومعبد حتشبسوت ومناظر النيل عند الفجر</p>
+                    <p class="tour-description" data-translate="tour-balloon-desc">تحليق لمدة 30-45 دقيقة فوق وادي
+                        الملوك ومعبد حتشبسوت ومناظر النيل عند الفجر</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-balloon-h1">توقيت شروق الشمس</li>
                         <li data-translate="tour-balloon-h2">رحلة 30-45 دقيقة</li>
@@ -326,7 +353,8 @@
                     <div class="tour-icon">🏛️</div>
                     <h3 data-translate="tour-luxor-dendera-name">الأقصر + دندرة</h3>
                     <p class="tour-time" data-translate="tour-luxor-dendera-time">يوم كامل</p>
-                    <p class="tour-description" data-translate="tour-luxor-dendera-desc">جولة شاملة تجمع بين معالم الأقصر الرئيسية ومجمع معبد دندرة المذهل</p>
+                    <p class="tour-description" data-translate="tour-luxor-dendera-desc">جولة شاملة تجمع بين معالم
+                        الأقصر الرئيسية ومجمع معبد دندرة المذهل</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-luxor-dendera-h1">معبد الكرنك</li>
                         <li data-translate="tour-luxor-dendera-h2">معبد حتشبسوت</li>
@@ -341,14 +369,16 @@
                     <div class="tour-icon">⭐</div>
                     <h3 data-translate="tour-luxor-highlights-name">أبرز معالم الأقصر</h3>
                     <p class="tour-time" data-translate="tour-luxor-highlights-time">يوم كامل</p>
-                    <p class="tour-description" data-translate="tour-luxor-highlights-desc">جولة شاملة تشمل وادي الملكات ومعبد الكرنك ومعبد حتشبسوت وتماثيل ممنون</p>
+                    <p class="tour-description" data-translate="tour-luxor-highlights-desc">جولة شاملة تشمل وادي الملكات
+                        ومعبد الكرنك ومعبد حتشبسوت وتماثيل ممنون</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-luxor-highlights-h1">وادي الملكات</li>
                         <li data-translate="tour-luxor-highlights-h2">معبد الكرنك</li>
                         <li data-translate="tour-luxor-highlights-h3">معبد حتشبسوت</li>
                         <li data-translate="tour-luxor-highlights-h4">تماثيل ممنون</li>
                     </ul>
-                    <button class="book-btn" data-tour-name="luxor-highlights" data-translate="book-now">احجز الآن</button>
+                    <button class="book-btn" data-tour-name="luxor-highlights" data-translate="book-now">احجز
+                        الآن</button>
                 </div>
 
                 <!-- Nile Cruise -->
@@ -356,7 +386,8 @@
                     <div class="tour-icon">⛵</div>
                     <h3 data-translate="tour-nile-cruise-name">الرحلة النيلية</h3>
                     <p class="tour-time" data-translate="tour-nile-cruise-time">4-5 أيام</p>
-                    <p class="tour-description" data-translate="tour-nile-cruise-desc">رحلة نيلية فاخرة بين الأقصر وأسوان مع زيارة المعابد ووجبات كاملة</p>
+                    <p class="tour-description" data-translate="tour-nile-cruise-desc">رحلة نيلية فاخرة بين الأقصر
+                        وأسوان مع زيارة المعابد ووجبات كاملة</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-nile-cruise-h1">إقامة 5 نجوم</li>
                         <li data-translate="tour-nile-cruise-h2">وجبات كاملة</li>
@@ -382,7 +413,8 @@
                     <div class="tour-icon">🗿</div>
                     <h3 data-translate="tour-pyramids-name">الأهرامات والمتحف</h3>
                     <p class="tour-time" data-translate="tour-pyramids-time">يوم كامل</p>
-                    <p class="tour-description" data-translate="tour-pyramids-desc">تجربة القاهرة الكاملة تشمل أهرامات الجيزة وأبو الهول والمتحف المصري مع مرشد خبير</p>
+                    <p class="tour-description" data-translate="tour-pyramids-desc">تجربة القاهرة الكاملة تشمل أهرامات
+                        الجيزة وأبو الهول والمتحف المصري مع مرشد خبير</p>
                     <ul class="tour-highlights">
                         <li data-translate="tour-pyramids-h1">أهرامات الجيزة</li>
                         <li data-translate="tour-pyramids-h2">تمثال أبو الهول العظيم</li>
@@ -408,37 +440,46 @@
                         <i class="fab fa-whatsapp"></i>
                         <div>
                             <h4 data-translate="contact-whatsapp">واتس اب</h4>
-                            <p><a href="https://wa.me/201009531706" target="_blank">+20 100 953 1706</a></p>
+                            <p><a href="https://wa.me/201009531706" target="_blank" rel="noopener noreferrer"
+                                    aria-label="WhatsApp">+20 100 953 1706</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4 data-translate="contact-email">البريد الإلكتروني</h4>
-                            <p><a href="mailto:info@egyptessence.com">info@egyptessence.com</a></p>
+                            <p><a href="mailto:info@egyptessence.com" aria-label="Email">info@egyptessence.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4 data-translate="contact-phone">الهاتف</h4>
-                            <p><a href="tel:+201009531706">+20 (100) 953 1706</a></p>
+                            <p><a href="tel:+201009531706" aria-label="Phone">+20 (100) 953 1706</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" data-translate="form-name" placeholder="اسمك الكامل" required>
+                            <label for="name" class="visually-hidden">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" data-translate="form-name" placeholder=""
+                                aria-label="Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" data-translate="form-email" placeholder="البريد الإلكتروني" required>
+                            <label for="email" class="visually-hidden">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" data-translate="form-email" placeholder=""
+                                aria-label="Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone" data-translate="form-phone" placeholder="رقم الهاتف" required>
+                            <label for="phone" class="visually-hidden">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" data-translate="form-phone" placeholder=""
+                                aria-label="Phone" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" data-translate="form-message" placeholder="رسالتك أو استفسارك" rows="5" required></textarea>
+                            <label for="message" class="visually-hidden">الرسالة</label>
+                            <textarea id="message" name="message" data-translate="form-message" placeholder=""
+                                aria-label="Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn-submit" data-translate="form-submit">أرسل الرسالة</button>
                     </form>
@@ -446,6 +487,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Accessibility live region for notifications -->
+    <div id="a11y-notifications" aria-live="polite" aria-atomic="true" class="visually-hidden"></div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -467,12 +511,18 @@
                 <div class="footer-section">
                     <h4 data-translate="footer-social">تابعنا</h4>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/EgyptEssenceTours" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/egyptessencetours" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.whatsapp.com/catalog/201009531706/?app_absent=0" target="_blank" title="WhatsApp Catalog"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://t.me/EgyptEssenceTours" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
-                        <a href="https://www.tiktok.com/@egypt.essence.tours" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://vk.com/egyptessencetours" target="_blank" title="VK"><i class="fab fa-vk"></i></a>
+                        <a href="https://www.facebook.com/EgyptEssenceTours" target="_blank" title="Facebook"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/egyptessencetours" target="_blank" title="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/catalog/201009531706/?app_absent=0" target="_blank"
+                            title="WhatsApp Catalog"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/EgyptEssenceTours" target="_blank" title="Telegram"><i
+                                class="fab fa-telegram"></i></a>
+                        <a href="https://www.tiktok.com/@egypt.essence.tours" target="_blank" title="TikTok"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://vk.com/egyptessencetours" target="_blank" title="VK"><i
+                                class="fab fa-vk"></i></a>
                         <a href="#wechat-placeholder" title="WeChat"><i class="fab fa-weixin"></i></a>
                     </div>
                 </div>
@@ -485,4 +535,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
