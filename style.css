@@ -1,4 +1,25 @@
 :root {
+  /* ألوان البراند الجديدة */
+  --brand-gold: #f7b134;
+  --brand-sky-blue: #52c1fe;
+  --brand-dark-blue: #00b1ff;
+  --brand-light-blue: #98e5fb;
+  --brand-navy-blue: #062572;
+
+  /* تحديث الألوان الحالية بألوان البراند */
+  --primary-turquoise: var(--brand-sky-blue);
+  --dark-teal: var(--brand-navy-blue);
+  --gold-accent: var(--brand-gold);
+  --sandy-beige: var(--brand-light-blue);
+  --warm-brown: var(--brand-dark-blue);
+
+  /* تحديث ألوان النظام */
+  --color-primary: var(--brand-sky-blue);
+  --color-primary-hover: var(--brand-dark-blue);
+  --color-primary-active: var(--brand-navy-blue);
+  --color-success: var(--brand-sky-blue);
+
+
   /* Primitive Color Tokens */
   --color-white: rgba(255, 255, 255, 1);
   --color-black: rgba(0, 0, 0, 1);
@@ -306,6 +327,36 @@ html {
   background-color: var(--color-background);
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+/* Accessibility utilities */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px; left: 0; right: 0;
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  padding: 8px 16px;
+  text-align: center;
+  z-index: 10001;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Strong focus styles for keyboard users */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 6px;
 }
 
 body {
@@ -1957,4 +2008,197 @@ select:focus {
         box-shadow: none !important;
         border: 1px solid #ccc !important;
     }
+}
+
+/* تحسينات إضافية بألوان البراند */
+.btn-hero {
+  background: linear-gradient(135deg, var(--brand-gold), var(--brand-sky-blue)) !important;
+  color: var(--brand-navy-blue) !important;
+  box-shadow: 0 6px 20px rgba(247, 177, 52, 0.4) !important;
+}
+
+.btn-hero:hover {
+  background: linear-gradient(135deg, var(--brand-sky-blue), var(--brand-gold)) !important;
+  box-shadow: 0 10px 30px rgba(82, 193, 254, 0.6) !important;
+}
+
+.book-btn {
+  background: linear-gradient(135deg, var(--brand-sky-blue), var(--brand-navy-blue)) !important;
+  box-shadow: 0 4px 15px rgba(82, 193, 254, 0.3) !important;
+}
+
+.book-btn:hover {
+  background: linear-gradient(135deg, var(--brand-navy-blue), var(--brand-sky-blue)) !important;
+  box-shadow: 0 8px 25px rgba(82, 193, 254, 0.5) !important;
+}
+
+.section-header h2 {
+  color: var(--brand-navy-blue) !important;
+}
+
+.section-header h2::after {
+  background: linear-gradient(90deg, var(--brand-gold), var(--brand-sky-blue)) !important;
+}
+
+.nav-list a:hover {
+  color: var(--brand-gold) !important;
+}
+
+.nav-list a::after {
+  background: linear-gradient(90deg, var(--brand-gold), var(--brand-light-blue)) !important;
+}
+
+.tour-card::before {
+  background: linear-gradient(90deg, var(--brand-sky-blue), var(--brand-gold), var(--brand-light-blue)) !important;
+}
+
+.tour-icon {
+  color: var(--brand-sky-blue);
+}
+
+.tour-card h3 {
+  color: var(--brand-navy-blue) !important;
+}
+
+.tour-time {
+  color: var(--brand-sky-blue) !important;
+  background: rgba(82, 193, 254, 0.1) !important;
+}
+
+.tour-highlights li::before {
+  color: var(--brand-sky-blue) !important;
+  background: rgba(82, 193, 254, 0.15) !important;
+}
+
+.feature i {
+  color: var(--brand-sky-blue) !important;
+}
+
+.feature:hover i {
+  color: var(--brand-gold) !important;
+}
+
+.feature::before {
+  background: linear-gradient(90deg, var(--brand-sky-blue), var(--brand-light-blue)) !important;
+}
+
+.contact-item i {
+  color: var(--brand-gold) !important;
+}
+
+.contact-item h4 {
+  color: var(--brand-gold) !important;
+}
+
+.contact-item a:hover {
+  color: var(--brand-gold) !important;
+}
+
+.social-links a {
+  background: linear-gradient(135deg, var(--brand-sky-blue), var(--brand-navy-blue)) !important;
+}
+
+.social-links a:hover {
+  background: linear-gradient(135deg, var(--brand-gold), var(--brand-light-blue)) !important;
+  color: var(--brand-navy-blue) !important;
+}
+
+.footer::before {
+  background: linear-gradient(90deg, var(--brand-sky-blue), var(--brand-gold), var(--brand-light-blue)) !important;
+}
+
+.footer-section h3 {
+  color: var(--brand-gold) !important;
+}
+
+.footer-section h4 {
+  color: var(--brand-sky-blue) !important;
+}
+
+.footer-section ul li a:hover {
+  color: var(--brand-sky-blue) !important;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, var(--brand-gold), var(--brand-light-blue)) !important;
+  color: var(--brand-navy-blue) !important;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(135deg, var(--brand-light-blue), var(--brand-gold)) !important;
+  box-shadow: 0 8px 20px rgba(247, 177, 52, 0.5) !important;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--brand-gold) !important;
+  box-shadow: 0 0 15px rgba(247, 177, 52, 0.5) !important;
+}
+
+.language-btn {
+  background: rgba(82, 193, 254, 0.15) !important;
+  border-color: rgba(82, 193, 254, 0.25) !important;
+}
+
+.language-btn:hover {
+  background: rgba(82, 193, 254, 0.25) !important;
+  border-color: rgba(247, 177, 52, 0.4) !important;
+}
+
+.language-dropdown a:hover,
+.language-dropdown a.active {
+  background: linear-gradient(135deg, var(--brand-light-blue), rgba(247, 177, 52, 0.7)) !important;
+  color: var(--brand-navy-blue) !important;
+}
+
+/* تحديث ألوان الهيدر */
+.header {
+  background: linear-gradient(135deg, var(--brand-navy-blue) 0%, var(--brand-sky-blue) 100%) !important;
+}
+
+.hero {
+  background: linear-gradient(rgba(6, 37, 114, 0.75), rgba(82, 193, 254, 0.4)),
+              url('data:image/svg+xml,') !important;
+}
+
+.hero-content h1 {
+  color: var(--brand-gold) !important;
+}
+
+.contact-section {
+  background: linear-gradient(135deg, var(--brand-navy-blue) 0%, var(--brand-sky-blue) 100%) !important;
+}
+
+.contact-section .section-header h2 {
+  color: var(--brand-gold) !important;
+}
+
+/* تحديث ألوان الأزرار الأساسية */
+.btn--primary {
+  background: var(--brand-sky-blue) !important;
+  color: var(--brand-navy-blue) !important;
+}
+
+.btn--primary:hover {
+  background: var(--brand-dark-blue) !important;
+}
+
+/* إضافة تأثيرات جديدة بألوان البراند */
+@keyframes brandPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 6px 20px rgba(247, 177, 52, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(82, 193, 254, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 6px 20px rgba(247, 177, 52, 0.4);
+  }
+}
+
+.logo-image svg {
+  animation: brandPulse 3s infinite ease-in-out;
 }
